@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 files=$(find data/*)
 
@@ -6,6 +6,7 @@ echo '==========================================================================
 echo 'load pg_denormalized'
 echo '================================================================================'
 # FIXME: implement this
+echo "$files" | time parallel sh load_denormalized.sh
 
 echo '================================================================================'
 echo 'load pg_normalized'
