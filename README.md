@@ -171,13 +171,13 @@ Ensure that your runtimes on the lambda server are recorded below.
 
 |                        | elapsed time (sequential) | elapsed time (parallel) |
 | -----------------------| ------------------------- | ------------------------- |
-| `pg_normalized`        |                           |                           | 
-| `pg_normalized_batch`  |                           |                           | 
-| `pg_denormalized`      |                           |                           | 
+| `pg_normalized`        | 7m43.904s                 | 1:01.84                   | 
+| `pg_normalized_batch`  | 2m55.573s                 | 0:15.62                   | 
+| `pg_denormalized`      | 0m19.329s                 | 0:00.33                   | 
 
 Then upload a link to your forked github repo on sakai.
 
 > **GRADING NOTE:**
 > It is not enough to just get passing test cases for this assignment in order to get full credit.
 > (It is easy to pass the test cases by just doing everything sequentially.)
-> Instead, you must also implement the parallelism correctly so that the parallel runtimes above are about 10x faster than the sequential runtimes.
+1:01.84elapsed> Instead, you must also implement the parallelism correctly so that the parallel runtimes above are about 10x faster than the sequential runtimes.
