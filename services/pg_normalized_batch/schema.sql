@@ -3,8 +3,8 @@ CREATE EXTENSION postgis;
 \set ON_ERROR_STOP on
 
 BEGIN;
-
-/*
+    
+ /*
  * Users may be partially hydrated with only a name/screen_name 
  * if they are first encountered during a quote/reply/mention 
  * inside of a tweet someone else's tweet.
