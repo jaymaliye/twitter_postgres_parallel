@@ -49,6 +49,7 @@ CREATE TABLE tweets (
     lang TEXT,
     place_name TEXT,
     geo geometry
+
     -- NOTE:
     -- We do not have the following foreign keys because they would require us
     -- to store many unhydrated tweets in this table.
@@ -84,8 +85,7 @@ CREATE INDEX tweet_tags_index ON tweet_tags(id_tweets);
 
 CREATE TABLE tweet_media (
     id_tweets BIGINT,
-    url TEXT
-    id_urls BIGINT,
+    url TEXT,
     type TEXT,
     PRIMARY KEY (id_tweets, url)
 );
